@@ -69,7 +69,7 @@ def calc_volumes(init_num_sides, init_radius, side_length):
     for n in volumes:
 #        print(">>>> n: ", n)
         fin_radius, fin_rad_theta, height = calc_final(init_radius, n+3, side_length)
-2        area = calc_area(fin_radius, fin_radius, side_length, n+3)
+        area = calc_area(fin_radius, fin_radius, side_length, n+3)
         vol = area * height
         volumes[n] = vol
     return volumes
